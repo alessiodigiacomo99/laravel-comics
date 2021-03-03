@@ -11199,25 +11199,7 @@ nav#navbar-second div.second div.search {
 #site_footer nav.nav-bottom div.social {
   color: #3490dc;
   text-transform: uppercase;
-  align-items: center;
   font-weight: 900;
   font-size: 1.3rem;
-}
-
-#site_footer nav.nav-bottom div.social ul {
-  display: flex;
-}
-
-#site_footer nav.nav-bottom div.social ul li {
-  list-style: none;
-}
-
-#site_footer nav.nav-bottom div.social ul li i {
-  color: #2e2e2e;
-  margin: 10px;
-  padding: 10px;
-  background-color: grey;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
