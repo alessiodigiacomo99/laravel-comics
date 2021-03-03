@@ -11012,3 +11012,113 @@ nav#navbar-second div.second div.search {
   cursor: pointer;
 }
 
+#site_content div.card_wrapper:first-child {
+  justify-content: center;
+  background-color: black;
+  padding: 50px 0;
+}
+
+#site_content div.card_wrapper:first-child div.card {
+  flex-basis: calc( 100% / 6);
+  margin: 0 10px;
+  background-color: black;
+}
+
+#site_content div.card_wrapper:first-child div.card h6 {
+  text-transform: uppercase;
+  color: white;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+#site_content div.card_wrapper:first-child div.card h4 {
+  text-transform: uppercase;
+  color: #3490dc;
+  font-weight: 800;
+}
+
+#site_content .must_reads {
+  padding: 50px 0;
+}
+
+#site_content .must_reads h2 {
+  text-transform: uppercase;
+  color: #3490dc;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+#site_content .must_reads div.card_wrapper {
+  display: flex;
+}
+
+#site_content .must_reads div.card_wrapper div.card {
+  width: 200px;
+  margin: 0 10px;
+  border: 0;
+}
+
+#site_content .must_reads div.card_wrapper div.card img {
+  width: 100%;
+}
+
+#site_content .must_reads div.card_wrapper div.card h6 {
+  text-transform: uppercase;
+  color: #3490dc;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+#site_content .must_reads div.card_wrapper div.card h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#site_content .must_reads div.card_wrapper div.card p {
+  font-size: 0.7rem;
+}
+
+#site_content .current_series {
+  background-color: black;
+}
+
+#site_content .current_series div.card_wrapper {
+  flex-wrap: wrap;
+}
+
+#site_content .current_series div.card_wrapper div.card {
+  flex-basis: calc(100% / 6);
+  margin: 20px 10px;
+}
+
+#site_content .buy {
+  background-color: #3490dc;
+  padding: 50px 0;
+}
+
+#site_content .buy div.buy_wrapper {
+  justify-content: space-between;
+}
+
+#site_content .buy div.buy_wrapper div.card {
+  background-color: #3490dc;
+  border: 0;
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: row;
+  align-items: center;
+}
+
+#site_content .buy div.buy_wrapper div.card img {
+  width: 50px;
+  display: inline-block;
+}
+
+#site_content .buy div.buy_wrapper div.card span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 10px;
+}
+

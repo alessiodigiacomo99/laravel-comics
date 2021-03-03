@@ -7,6 +7,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+$primary : black;
+$secondary : #3490dc;
+
 nav#navbar-first{
     padding: 0!important;
     display: flex;
@@ -51,7 +54,7 @@ nav#navbar-second{
             li{
                 text-transform: uppercase;
                 a{
-                    color: black!important;
+                    color: $primary!important;
                     font-weight: 800;
                 }
             }
@@ -62,9 +65,106 @@ nav#navbar-second{
             display: flex;
             justify-content: flex-end;
             text-transform: capitalize;
-            border-bottom: 3px solid #3490dc;
+            border-bottom: 3px solid $secondary;
             cursor: pointer;
         }
     }
 
+}
+
+#site_content{
+    div.card_wrapper:first-child{
+        justify-content: center;
+        background-color: $primary;
+        padding: 50px 0;
+        div.card{
+            flex-basis: calc( 100% / 6);
+            margin: 0 10px;
+            background-color: black;
+            h6{
+                text-transform: uppercase;
+                color: white;
+                margin: 10px 0;
+                font-weight: 800;
+            }
+            h4{
+                text-transform: uppercase;
+                color: $secondary;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .must_reads{
+        padding: 50px 0;
+        h2{
+            text-transform: uppercase;
+            color: $secondary;
+            font-weight: 800;
+            margin-left: 50px;
+        }
+        div.card_wrapper{
+            display: flex;
+
+            div.card{
+                width: 200px;
+                margin: 0 10px;
+                border: 0;
+                img{
+                    width: 100%
+                }
+                h6{
+                    text-transform: uppercase;
+                    color: $secondary;
+                    font-weight: 800;
+                    margin-top: 10px;
+                }
+                h4{
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .current_series{
+        background-color: $primary;
+        div.card_wrapper{
+            flex-wrap: wrap;
+            div.card{
+                flex-basis: calc(100% / 6);
+                margin: 20px 10px;
+            }
+        }
+    }
+
+    .buy{
+        background-color: $secondary;
+        padding: 50px 0;
+        div.buy_wrapper{
+            justify-content: space-between;
+            div.card{
+                background-color: $secondary;
+                border: 0;
+                display: flex;
+                flex-basis: 25%;
+                flex-direction: row;
+                align-items: center;
+                img{
+                    width: 50px;
+                    display: inline-block;
+                }
+                span{
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                    margin: 10px;
+                }
+            }
+        }
+    }
 }

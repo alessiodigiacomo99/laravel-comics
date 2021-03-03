@@ -71,6 +71,128 @@
 <!-- /second nav -->
 @endsection
 
-@section('main')
+@section('content')
+<div id="site_content">
+    <div class="card_wrapper d-flex">
+        <div class="card">
+            <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+            <h6>batman #104</h6>
+            <h4>Avalable now</h4>
+        </div>
+        <div class="card">
+            <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+            <h6>batman #104</h6>
+            <h4>Avalable now</h4>
+        </div>
+        <div class="card">
+            <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+            <h6>batman #104</h6>
+            <h4>Avalable now</h4>
+        </div>
+        <div class="card">
+            <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+            <h6>batman #104</h6>
+            <h4>Avalable now</h4>
+        </div>
+        <div class="card">
+            <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+            <h6>batman #104</h6>
+            <h4>Avalable now</h4>
+        </div>
+    </div>
+    <!-- /card_wrapper -->
 
+    <section class="must_reads container">
+        <h2>must reads</h2>
+        <div class="card_wrapper">
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>batman #104</h6>
+                <h4>Avalable now</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, consequuntur vel aliquam similique aut earum.</p>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>batman #104</h6>
+                <h4>Avalable now</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, consequuntur vel aliquam similique aut earum.</p>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>batman #104</h6>
+                <h4>Avalable now</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, consequuntur vel aliquam similique aut earum.</p>
+            </div>
+        </div>
+        <!-- /.card_wrapper -->
+    </section>
+    <!-- /must_reads -->
+
+    <section class="current_series">
+        <div class="card_wrapper d-flex">
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+        </div>
+    </section>
+    <!-- /.current_series -->
+    <section class="buy">
+        <div class="buy_wrapper d-flex container">
+            <div class="card">
+                <img src="{{asset('img/buy-bar-DCUI.svg')}}" alt="">
+                <span>digital comics</span>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/buy-bar-DCshop.svg')}}" alt="">
+                <span>digital comics</span>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/buy-bar-subscription.svg')}}" alt="">
+                <span>digital comics</span>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/buy-bar-locator.svg')}}" alt="">
+                <span>digital comics</span>
+            </div>
+        </div>
+    </section>
+    <!-- /.buy -->
+</div>
 @endsection
