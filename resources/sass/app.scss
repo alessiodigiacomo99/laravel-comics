@@ -22,9 +22,16 @@ nav#navbar-first{
            margin-bottom: 0!important;
             li{
                 list-style: none;
-                padding: 5px 50px;
+                padding: 10px 50px;
                 border-right: 1px solid white;
+                transform: skew(-15deg);
                 cursor: pointer;
+                span{
+                    margin: 0 5px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 800;
+                }
                 img {
                     width: 25px;
                 }
@@ -32,6 +39,9 @@ nav#navbar-first{
             li:first-child{
                 background-color: white;
 
+            }
+            li:last-child{
+                transform: skew(0deg);
             }
         }
     }
@@ -167,6 +177,45 @@ nav#navbar-second{
                     font-weight: 800;
                     margin: 10px;
                 }
+            }
+        }
+    }
+
+    #admin{
+        height: 500px;
+        padding: 50px 0;
+        font-size: 1.4rem;
+        li{
+            list-style: none;
+        }
+    }
+
+    .admin_comics{
+        padding: 50px 0;
+        position: relative;
+        z-index: 0;
+    }
+
+    .jumbo{
+        width: 100vw;
+        position: relative;
+        > img:first-child{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .blue{
+            width: 100vw;
+            height: 100px;
+            background-color: $secondary;
+        }
+        .container{
+            img{
+                transform: scale(0.6);
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                border: 2px solid rgb(119, 118, 118);
             }
         }
     }

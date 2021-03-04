@@ -14,10 +14,14 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@index');
+Route::resource('comics', 'PageController');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
+
+    Route::get('/', 'HomeController@index')->name('index');
+    Route::resource('comics', 'ComicController');
+});
