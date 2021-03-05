@@ -22,7 +22,7 @@
                 <tr>
                     <td scope="row">{{ $comic->id }}</td>
                     <td>{{ $comic->title }}</td>
-                    <td><img src="{{ asset('storage/' . $comic->cover) }}" alt=""></td>
+                    <td><img class="table_img" src="{{ asset('storage/' . $comic->cover) }}" alt=""></td>
                     <td>{{ $comic->available }}</td>
                     <td>{{ $comic->price }}</td>
                     <td>

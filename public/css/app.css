@@ -10180,6 +10180,9 @@ nav#navbar-second div.second div.search {
   position: relative;
   z-index: 0;
 }
+#site_content .admin_comics .table_img {
+  height: 200px;
+}
 #site_content .jumbo {
   width: 100vw;
   position: relative;
@@ -10201,6 +10204,52 @@ nav#navbar-second div.second div.search {
   top: 20%;
   left: 20%;
   border: 2px solid #777676;
+}
+#site_content .info {
+  margin-top: 50px;
+}
+#site_content .info h2 {
+  color: #003F5E;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#site_content .info .d-flex {
+  background-color: #2cc52c;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+}
+#site_content .info .d-flex span {
+  font-weight: 900;
+}
+#site_content .info .d-flex h4 {
+  text-transform: uppercase;
+  color: lightgreen;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 900;
+}
+#site_content .info .descrizione {
+  margin: 20px 0;
+}
+#site_content .specifiche div.container {
+  justify-content: space-between;
+}
+#site_content .specifiche div.container h2 {
+  color: #003F5E;
+  font-weight: 800;
+}
+#site_content .specifiche div.container ul {
+  padding: 10px 0;
+}
+#site_content .specifiche div.container ul li {
+  list-style: none;
+  color: #3490dc;
+}
+#site_content .specifiche div.container ul li span {
+  color: #003F5E;
+  font-weight: 900;
 }
 
 #site_footer {

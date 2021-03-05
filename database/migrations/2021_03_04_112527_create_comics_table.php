@@ -19,7 +19,7 @@ class CreateComicsTable extends Migration
             $table->text('description');
             $table->string('cover')->nullable();
             $table->integer('price');
-            $table->string('available');
+            $table->string('available')->nullable();
             $table->timestamps();
         });
     }

@@ -64,7 +64,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        return view('admin.comics.show', compact('comic'));
     }
 
     /**
@@ -87,7 +87,13 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+
+        $cover = Storage::put('cover_imgs', $request->cover);
+        $data = $request->all();
+        $data['cover'] = $cover;
+        $comic->update($data);
+
+        return redirect()->route('admin.comics.index', $comic);
     }
 
     /**
@@ -98,6 +104,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('admin.comics.index');
     }
 }

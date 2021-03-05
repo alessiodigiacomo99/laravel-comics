@@ -65,7 +65,19 @@
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <img src="{{asset('img/fumetto_infinite_frontier.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_suicide_squad.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_supergirl.jpg')}}" alt="">
+                <h6>Avalable now</h6>
+            </div>
+            <div class="card">
+                <img src="{{asset('img/fumetto_swap_thing.jpg')}}" alt="">
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
@@ -73,33 +85,22 @@
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <img src="{{asset('img/fumetto_infinite_frontier.jpg')}}" alt="">
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <img src="{{asset('img/fumetto_suicide_squad.jpg')}}" alt="">
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <img src="{{asset('img/fumetto_supergirl.jpg')}}" alt="">
                 <h6>Avalable now</h6>
             </div>
             <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
+                <img src="{{asset('img/fumetto_swap_thing.jpg')}}" alt="">
                 <h6>Avalable now</h6>
             </div>
-            <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
-                <h6>Avalable now</h6>
-            </div>
-            <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
-                <h6>Avalable now</h6>
-            </div>
-            <div class="card">
-                <img src="{{asset('img/fumetto_batman.jpg')}}" alt="">
-                <h6>Avalable now</h6>
-            </div>
+            
         </div>
     </section>
     <!-- /.current_series -->

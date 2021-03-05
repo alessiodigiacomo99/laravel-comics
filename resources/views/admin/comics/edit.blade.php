@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<form  class="container" action="{{route('admin.comics.store')}}" method="post" enctype="multipart/form-data">
+<form  class="container" action="{{route('admin.comics.update', ['comic' => $comic->id])}}" method="post" enctype="multipart/form-data">
         @csrf
-        @method('POST')
+        @method('PUT')
         <div>
             <label for="title">Title</label>
             <input type="text" name="title" id="" value="{{$comic->title}}">
