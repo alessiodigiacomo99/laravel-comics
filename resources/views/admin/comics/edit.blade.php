@@ -31,6 +31,15 @@
             @endif
         </div>
 
+        <div class="form-group">
+            <label for="writers">writers</label>
+            <select name="writers[]" id="writers" multiple>
+                @foreach($writers as $writer)
+                    <option value="{{ $writer->id }}" {{ $comic->writers->contains($writer) ? 'selected' : ''}}>{{ $writer->name }}</option>
+                @endforeach
+            </select>
+        </div>
+
         <button type="submit">Edit Comic</button>
     </form>
 @endsection

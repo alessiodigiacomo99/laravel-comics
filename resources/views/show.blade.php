@@ -33,6 +33,17 @@
             <ul>
                 <li>
                     <span>Written by:</span>
+                    <ul>
+                        @if( count($comic->writers) > 0)
+                        @foreach($comic->writers as $writer)
+                            <li>
+                                {{ $writer->name }}
+                            </li>
+                        @endforeach
+                        @else
+                            non ho inserito nessun writer
+                        @endif 
+                    </ul>
                 </li>
             </ul>
         </div>

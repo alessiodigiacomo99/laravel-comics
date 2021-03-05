@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Comic;
+use App\Writer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -27,7 +28,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('admin.comics.create');
+        $writers = Writer::all();
+        return view('admin.comics.create', compact('writers'));
     }
 
     /**
@@ -48,11 +50,14 @@ class ComicController extends Controller
         ]);
 
         
-        $cover = Storage::put('cover_imgs', $request->cover);
-        $validateData['cover'] = $cover;
+        if (strlen($request->cover) != 0){
+            $cover = Storage::put('cover_imgs', $request->cover);
+            $validateData['cover'] = $cover;
+        }
 
         Comic::create($validateData);
         $post = Comic::orderBy('id', 'desc')->first();
+        $post->writers()->attach($request->writers);
         return redirect()->route('admin.comics.index');
     }
 
@@ -75,7 +80,8 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view('admin.comics.edit', compact('comic'));
+        $writers = Writer::all();
+        return view('admin.comics.edit', compact('comic'), compact('writers'));
     }
 
     /**
@@ -87,11 +93,14 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-
-        $cover = Storage::put('cover_imgs', $request->cover);
         $data = $request->all();
-        $data['cover'] = $cover;
+        if (strlen($request->cover) != 0){
+            $cover = Storage::put('cover_imgs', $request->cover);
+            $data['cover'] = $cover;
+        }
         $comic->update($data);
+        $post = Comic::orderBy('id', 'desc')->first();
+        $post->writers()->sync($request->writers);
 
         return redirect()->route('admin.comics.index', $comic);
     }

@@ -27,6 +27,15 @@
             <input type="checkbox" class="form-control-checkbix" name="available" id="">
         </div>
 
+        <div class="form-group">
+            <label for="writers">writers</label>
+            <select name="writers[]" id="writers" multiple>
+                @foreach($writers as $writer)
+                    <option value="{{ $writer->id }}">{{ $writer->name }}</option>
+                @endforeach
+            </select>
+        </div>
+
         <button type="submit">Add a Comic</button>
     </form>
 @endsection

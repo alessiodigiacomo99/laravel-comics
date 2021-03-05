@@ -65,7 +65,7 @@
         <!-- Nav tabs -->
         
         <div class="search">
-            Search
+            Search <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <!-- /.search -->
     </div>
